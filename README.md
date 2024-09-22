@@ -17,7 +17,7 @@ This project is perfect for use cases such as:
 - **Dockerized**: Easy to set up and run using Docker Compose for containerized environments.
 
 ## Setup and Deployment
-- clone the git repository ``` git clone https://github.com/your-repo.git ```  and navigate to the project path
+- clone the git repository ``` git clone https://github.com/Rag-using-Pinecone-and-Cohere.git ```  and navigate to the project path
 - Build and Run with Docker Compose: Ensure Docker and Docker Compose are installed on your machine. Then, run the following command: ```docker-compose up --build```
 
 ## How It Works
