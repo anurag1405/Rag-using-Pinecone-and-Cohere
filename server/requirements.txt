@@ -1,0 +1,9 @@
+langchain_community
+langchain
+pypdf
+pinecone
+cohere
+Streamlit
+PyPDF2
+fastapi
+uvicorn

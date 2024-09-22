@@ -1,0 +1,5 @@
+pypdf
+Streamlit
+PyPDF2
+fastapi
+uvicorn

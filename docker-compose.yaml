@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./server
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./server:/app
+    restart: always
+    networks:
+      - app-network
+
+  client:
+    build:
+      context: ./client
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./client:/app
+    depends_on:
+      - server
+    environment:
+      - SERVER_HOST=http://server:8000   # Use the 'server' container hostname
+    restart: always
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
